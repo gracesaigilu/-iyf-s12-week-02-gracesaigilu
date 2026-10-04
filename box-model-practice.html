@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,9 +30,9 @@
             margin-top: 40px;
         }
 
-        /* =================================
-           EXERCISE 1: BOX MODEL VISUALIZATION
-           ================================= */
+        /* ==============================
+           EXERCISE 1: BOX MODEL
+           ============================== */
 
         .box-container {
             display: flex;
@@ -41,20 +42,22 @@
 
         .box {
             width: 200px;
+            min-height: 150px;
             padding: 20px;
             border: 5px solid #333;
             margin: 10px;
-            background-color: lightblue;
-            text-align: center;
         }
 
         .content-box {
             background-color: lightblue;
+            padding: 10px;
+            border: 2px solid blue;
         }
 
         .padding-box {
             background-color: lightgreen;
-            padding: 40px;
+            padding: 30px;
+            border: 2px solid green;
         }
 
         .border-box {
@@ -65,12 +68,12 @@
         .margin-box {
             background-color: lightpink;
             margin: 30px;
+            border: 2px solid red;
         }
 
-
-        /* =================================
+        /* ==============================
            EXERCISE 2: DEBUG THE LAYOUT
-           ================================= */
+           ============================== */
 
         .broken-box {
             width: 300px;
@@ -80,10 +83,9 @@
             background-color: lightblue;
         }
 
-
-        /* =================================
+        /* ==============================
            EXERCISE 3: CARD COMPONENT
-           ================================= */
+           ============================== */
 
         .card {
             width: 300px;
@@ -127,10 +129,9 @@
 
     <h1>CSS Box Model Practice</h1>
 
-
-    <!-- =================================
+    <!-- ==============================
          EXERCISE 1
-         ================================= -->
+         ============================== -->
 
     <h2>Exercise 1: Box Model Visualization</h2>
 
@@ -146,4 +147,57 @@
             <p>This box has larger padding.</p>
         </div>
 
-        <div class="
+        <div class="box border-box">
+            <strong>Border</strong>
+            <p>This box has a visible border.</p>
+        </div>
+
+        <div class="box margin-box">
+            <strong>Margin</strong>
+            <p>This box has space around it.</p>
+        </div>
+
+    </div>
+
+    <!-- ==============================
+         EXERCISE 2
+         ============================== -->
+
+    <h2>Exercise 2: Debug the Layout</h2>
+
+    <p>
+        This box should be exactly 300px wide in total.
+    </p>
+
+    <div class="broken-box">
+        This box is 300px wide in total because
+        box-sizing is set to border-box.
+    </div>
+
+    <!-- ==============================
+         EXERCISE 3
+         ============================== -->
+
+    <h2>Exercise 3: Card Component</h2>
+
+    <div class="card">
+
+        <img
+            src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=600&q=80"
+            alt="Workspace"
+        >
+
+        <h3>My Practice Card</h3>
+
+        <p>
+            This is a simple card demonstrating
+            the CSS box model with padding,
+            border and margins.
+        </p>
+
+        <button>Learn More</button>
+
+    </div>
+
+</body>
+</html>
