@@ -423,4 +423,73 @@ form {
     margin: 0 auto;
   }
 }
+/* =========================================
+   TASK 4.4 - POLISH & REFINEMENT
+   ========================================= */
+
+/* Buttons */
+.button,
+button,
+.btn {
+  transition: all 0.3s ease;
+}
+
+.button:hover,
+button:hover,
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Links */
+a {
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+/* Cards */
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Focus states - accessibility */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevent horizontal scrolling */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Consistent spacing */
+section {
+  margin-bottom: 40px;
+}
+
+/* Readable text */
+p,
+li {
+  line-height: 1.6;
+}
 
