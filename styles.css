@@ -166,7 +166,21 @@ footer {
     padding: 20px;
     margin-top: 40px;
 }
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
 
+.footer-columns > div {
+    flex: 1;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+}
 footer p {
     margin: 0;
 }
