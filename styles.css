@@ -109,7 +109,13 @@ section {
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
 }
-
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 /* Cards */
 .card,
 .project-card,
@@ -120,7 +126,10 @@ article {
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
-
+.card-container article {
+    flex: 1 1 30%;
+    margin: 0;
+}
 /* Lists */
 ul,
 ol {
