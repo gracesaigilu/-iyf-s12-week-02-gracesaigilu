@@ -10,14 +10,14 @@ body {
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    color: #333333;
-    background-color: #f4f7fb;
+    color: var(--color-text);
+background-color: var(--color-background);
 }
 
 /* Header */
 header {
-    background-color: #1f2937;
-    color: white;
+    background-color: var(--color-primary-dark);
+color: white;
     padding: 30px 20px;
     text-align: center;
 }
@@ -38,14 +38,14 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    background-color: #2563eb;
+    background-color: var(--color-primary);
     padding: 10px 18px;
     border-radius: 6px;
     transition: background-color 0.3s;
 }
 
 nav a:hover {
-    background-color: #1d4ed8;
+    background-color: var(--color-primary-dark);
 }
 
 /* Main content */
@@ -59,13 +59,13 @@ main {
 h2 {
     font-size: 2rem;
     margin: 30px 0 15px;
-    color: #1f2937;
+     color: var(--color-text);
 }
 
 h3 {
     font-size: 1.5rem;
     margin: 20px 0 10px;
-    color: #2563eb;
+    color: var(--color-primary);
 }
 
 h4,
@@ -81,11 +81,11 @@ p {
 
 /* Links */
 a {
-    color: #2563eb;
+    color: var(--color-primary);
 }
 
 a:hover {
-    color: #1d4ed8;
+    color: var(--color-primary-dark);
 }
 
 /* Sections */
@@ -122,7 +122,7 @@ li {
 button,
 .btn {
     display: inline-block;
-    background-color: #2563eb;
+    background-color: var(--color-primary);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -133,12 +133,12 @@ button,
 
 button:hover,
 .btn:hover {
-    background-color: #1d4ed8;
+    background-color: var(--color-primary-dark);
 }
 
 /* Footer */
 footer {
-    background-color: #1f2937;
+    background-color: var(--color-primary-dark);
     color: white;
     text-align: center;
     padding: 20px;
