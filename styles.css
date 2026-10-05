@@ -293,4 +293,134 @@ textarea {
         grid-template-columns: 1fr;
     }
 }
+/* =========================================
+   TASK 4.3 - MOBILE-FIRST RESPONSIVE DESIGN
+   ========================================= */
+
+/* Mobile-first base styles */
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Mobile navigation */
+.nav-links {
+  display: none;
+}
+
+.menu-toggle {
+  display: block;
+}
+
+/* Mobile home layout */
+.hero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+
+/* Mobile projects - 1 column */
+.projects-container,
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* Mobile contact - full width */
+.contact-container,
+.contact-section {
+  width: 100%;
+}
+
+form {
+  width: 100%;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .hero {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+
+  /* Projects: 2 columns */
+  .projects-container,
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+
+  /* Horizontal navigation */
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  /* Home: hero + side image */
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  /* Projects: 3 columns */
+  .projects-container,
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Contact: form + sidebar */
+  .contact-container,
+  .contact-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: start;
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1280px) {
+
+  .hero {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .projects-container,
+  .projects-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
 
